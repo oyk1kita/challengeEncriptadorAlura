@@ -1,0 +1,277 @@
+body {
+    background: black;
+    font-family: "Rowdies", sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    background-color: #FF4E88;
+    display: flex;
+    padding: 0.5%;
+}
+
+.header__logo {
+    width: 10%;
+}
+
+.titulo {
+    font-size: 3rem;
+    color: #ffda76;
+    font-weight: 700;
+    margin-left: 10%;
+    line-height: 1;
+}
+
+main {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+    flex-wrap: wrap;
+}
+
+.left {
+    background-color: black;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.info {
+    min-height: 0.005px;
+    font-size: 18px;
+    display: flex;
+}
+
+.left__info {
+    color: #08684e;
+    font-size: 18px;
+}
+
+.ingreso_texto {
+    border: 1px solid #08684e;
+    width: 100%;
+    font-size: 20px;
+    color: #b4d6cd;
+    resize: none;
+    background: black;
+    border: none;
+    outline: #FF4E88;
+    height: 60%;
+    font-family: "Rowdies", sans-serif;
+}
+
+.ingreso_texto ::placeholder {
+    color: #08684e;
+}
+
+.ingresa__texto,
+.h6 {
+    font-size: 18px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.h6 {
+    color: #ffda76;
+}
+
+.ingresa__texto {
+    color: #FF4E88;
+}
+
+.left__botones {
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.boton__encriptar,
+.boton__desencriptar,
+.boton__copiar {
+    border: 1px solid black;
+    max-width: 328px;
+    cursor: pointer;
+    max-width: 328px;
+    width: 40%;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+}
+
+.boton__encriptar {
+    background-color: #FF4E88;
+    color: black;
+}
+.boton__encriptar:hover {
+    width: 80%;
+    line-height: 35px;
+    background-color: #08684e;
+    color: white;
+}
+
+.boton__desencriptar {
+    background-color: #ffda76;
+    color: black;
+}
+.boton__desencriptar:hover {
+    width: 80%;
+    line-height: 35px;
+    background-color: #08684e;
+    color: white;
+}
+.right {
+    background-color: transparent;
+    color: white;
+    min-height: 70vh;
+    border-radius: 32px;
+    padding: 4%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+    width: 30%;
+}
+
+.right.ajustar {
+    justify-content: space-between;
+}
+
+.right__info {
+    color: #08684e;
+    font-size: 16px;
+    text-align: center;
+}
+
+.ellas {
+    width: 50%;
+}
+
+.oculto {
+    display: none;
+}
+
+.mensaje__final.ajustatar {
+    font-weight: 400;
+    text-align: left;
+    height: 80%;
+
+}
+
+.mensaje__final {
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 24px;
+    color: #ffda76;
+    text-align: center;
+    font-weight: bold;
+    height: 75%;
+    width: 95%;
+}
+
+.ingreso__texto {
+    font-size: 20px;
+    color: #08684e;
+    text-align: center;
+    font-weight: 400;
+}
+
+.boton__copiar {
+    background-color: #b4d6cd;
+    color: white;
+    width: 100%;
+    display: none;
+    background: transparent;
+    color: #08684e;
+
+    .boton__copiar:hover {
+        width: 80%;
+        line-height: 35px;
+        background-color: #08684e;
+        color: white;
+
+    }
+}
+
+.oculto {
+    display: none;
+}
+
+footer {
+    height: 60%;
+    background-color: #08684e;
+    color: #ffda76;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 100;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.info__footer{
+    display: flex;
+    text-align: right;
+    height: auto;
+    align-items: center;
+}
+
+.ellas {
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .boton__encriptar,
+    .boton__desencriptar {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main {
+        padding: 0 16px;
+    }
+
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .boton__encriptar,
+    .boton__desencriptar {
+        max-width: none;
+        width: 100%;
+    }
+
+    .left__botones {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .right {
+        padding: 2%;
+        min-height: auto;
+    }
+}

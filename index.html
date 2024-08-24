@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Encriptador Alura Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <img class="header__logo" src="./Imagenes/Logo.png" alt="Logo de Alura">
+    </header>
+
+    <p class="titulo">EnCrIpTaDoR</p>
+    <main>
+        <div class="left">
+            <textarea id="ingresoTexto" class="ingreso_texto" placeholder="Ingrese texto aquí"></textarea>
+
+            <div class="info">
+                <img src="./Imagenes/exclama.jpg" alt="ícono de exclamación">
+                <span class="left__info">Sólo letras minúsculas y sin acentos</span>
+            </div>
+            <div class="left__botones">
+                <button id="botonEncriptar" class="boton__encriptar">Encriptar</button>
+                <button id="botonDesencriptar" class="boton__desencriptar">Desencriptar</button>
+            </div>
+        </div>
+        <div id="right" class="right">
+            <p id="rightInfo" class="ingresa__texto">Ingresa el texto que desees encriptar o desencriptar</p>
+            <img id="ellas" class="ellas" src="./Imagenes/ellas.jpg" alt="Tres mujeres secreteando">
+            <h6 id="hiden" class="h6">Ningún mensaje fue encontrado</h6>
+
+            <textarea id="mensajeFinal" class="mensaje__final" readonly></textarea>
+            <button id="botonCopiar" class="boton__copiar">Copiar</button>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="info__footer">
+        <a  class="githube__link" href="https://github.com/dashboard">
+            <img src="./Imagenes/githyb.png" alt="Logo de GitHub">
+        </a>
+        <p>Created for AluraLatam and Oracle By KiKa 2024</p>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
